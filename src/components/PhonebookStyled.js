@@ -7,7 +7,7 @@ export const Box = styled.div`
 
     text-align: center;
 
-    background-color: #b9a2b9;
+    background: radial-gradient(crimson, skyblue);
 
     border: 5px solid black;
     border-radius: 20px;
@@ -20,21 +20,6 @@ export const FormBtn = styled.button`
     width: 100px;
     padding: 10px;
     margin: 16px auto 0;
-
-    background-color: #c9faea;
-
-    border: 2px solid black;
-    border-radius: 10px;
-
-    &:hover {
-        background-color: #a0f8db;
-        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.3));
-    }
-
-    &:focus {
-        background-color: aquamarine;
-        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.3));
-    }
 `
 export const LabelText = styled.p`
     margin: 0;
@@ -42,14 +27,11 @@ export const LabelText = styled.p`
 
 export const Input = styled.input`
     border-radius: 5px;
+    opacity: 50%;
 
-    &:hover {
-        background-color: #c9faea;
-        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.3));
-    }
 
-    &:focus {
-        background-color: aquamarine;
+    &:hover, &:focus {
+        opacity: 40%;
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.3));
     }
 `
@@ -64,23 +46,6 @@ export const ListItem = styled.li`
 
     &:not(:last-child) {
         margin-bottom: 5px;
-    }
-`
-
-export const DeleteBtn = styled.button`
-    cursor: pointer;
-    background-color: #c9faea;
-
-    border-radius: 20px;
-
-    &:hover {
-        background-color: #a0f8db;
-        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.3));
-    }
-
-    &:focus {
-        background-color: aquamarine;
-        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.3));
     }
 `
 
